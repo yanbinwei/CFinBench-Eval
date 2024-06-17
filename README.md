@@ -28,8 +28,8 @@ This project is developed based on the OpenCompass evaluation framework. For det
 ```
 conda create --name opencompass python=3.10 pytorch torchvision pytorch-cuda -c nvidia -c pytorch -y
 conda activate opencompass
-git clone https://github.com/open-compass/opencompass opencompass
-cd opencompass
+git clone https://github.com/yanbinwei/CFinBench-Eval.git CFinBench-Eval
+cd CFinBench-Eval
 pip install -e .
 ```
 
