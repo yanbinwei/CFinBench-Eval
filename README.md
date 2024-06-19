@@ -55,21 +55,21 @@ After extracting the CFinBench. The file structure of the directory should be sh
 │  │  ├── /multi_choice/
 │  │  │  ├── /1-1.jsonl
 │  │  │  └── ...
-│  │  └── /single_choice/
+│  │  ├── /single_choice/
 │  │  │  └── ...
 │  ├── /test/
 │  │  ├── /judgment/
 │  │  │  └── ...
 │  │  ├── /multi_choice/
 │  │  │  └── ...
-│  │  └── /single_choice/
+│  │  ├── /single_choice/
 │  │  │  └── ...
 │  ├── /val/
 │  │  ├── /judgment/
 │  │  │  └── ...
 │  │  ├── /multi_choice/
 │  │  │  └── ...
-│  │  └── /single_choice/
+│  │  ├── /single_choice/
 │  │  │  └── ...
 ```
 
@@ -246,7 +246,7 @@ After preparing the datasets, you can evaluate the performance of the LLM models
 python run.py --models hf_qwen1_5_7b --datasets cfinbench_gen_5775b0 cfinbench_gen_fce092 --summarizer cfinbench_viz
 ```
 
-The configuration details of the CFinBench can be referred to the files under `configs/datasets/CFinbench`, and the custom evaluator can be found in `opencompass/datasets/cfinbench.py`.
+The configuration details of the CFinBench can be referred to the files under `configs/datasets/CFinbench`, and the custom evaluator can be found in `opencompass/datasets/cfinbench.py`. If you wish to obtain the evaluation results on the test subset, you can submit the inference results of that to yanbinwei@huawei.com.
 
 ## Benchmark Results
 
@@ -257,14 +257,18 @@ More detailed and comprehensive benchmark result can refer to our paper.
 <img src="docs/zh_cn/_static/image/result.png" alt="">
 </div>
 
+## Acknowledgements
+
+We thank the awesome [OpenCompass](https://github.com/open-compass/opencompass/tree/main) project.
+
 ## Citation
 
 If this project is beneficial to your research, please cite:
 
 ```
-@misc{cFinBench,
+@misc{nie2024cfinbench,
       title={CFinBench: A Comprehensive Chinese Financial Benchmark for Large Language Models},
-      author={Ying Nie, Binwei Yan, Tianyu Guo, Hao Liu, Haoyu Wang, Wei He and others},
+      author={Ying Nie, Binwei Yan, Tianyu Guo, Hao Liu, Haoyu Wang, Wei He, Yunhe Wang, Dacheng Tao and others},
       year={2024},
       eprint={},
 }
