@@ -39,7 +39,7 @@ To evaluate the CFinBench benchmark, first you need to prepare the CFinBench dat
 
 ```
 # Download CFinBench to data/ folder and unzip
-cd data
+mkdir data && cd data
 unzip CFinBench
 ```
 
